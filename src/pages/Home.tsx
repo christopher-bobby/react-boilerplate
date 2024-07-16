@@ -17,7 +17,7 @@ function Home() {
     <div className="App">
         <h1>Star Wars Characters</h1>
         <ul>
-        {data.results.map((person) => (
+        {data.results.map((person: any) => (
             <li key={person.name}>{person.name}</li>
         ))}
         </ul>
